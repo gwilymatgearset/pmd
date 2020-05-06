@@ -51,6 +51,16 @@ public class Foo {
             return 'some other string';
         }
     }
+
+    public void usedInBlocks() {
+        Integer used = 0;
+
+        if (true) {
+            for (Integer i = 0; i < 10; i++) {
+                used++;
+            }
+        }
+    }
 }
 ]]>
         </code>
